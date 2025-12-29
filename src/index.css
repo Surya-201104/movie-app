@@ -1,13 +1,100 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
+  background: #0b0f19;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input,
+.search-bar select {
+  flex: 1;
+  padding: 10px;
+  background: #111827;
+  color: white;
+  border: 1px solid #1f2937;
+}
+
+.search-bar button {
+  padding: 10px 18px;
+  background: #6366f1;
+  border: none;
+  cursor: pointer;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  text-decoration: none;
+  color: white;
+  background: #111827;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.movie-card span {
+  padding: 0 10px 10px;
+  display: block;
+  color: #9ca3af;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.details {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+}
+
+.details img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.error {
+  color: #f87171;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+}
+
+.back-link {
+  color: #22d3ee;
+  text-decoration: none;
 }
