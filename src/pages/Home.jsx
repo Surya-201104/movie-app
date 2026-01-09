@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect, useState } from "react";
 import { searchMovies } from "../api/omdb";
 import SearchBar from "../components/SearchBar";

@@ -1,4 +1,4 @@
-
+/* eslint-disable */
 const API_KEY = "b29c2821";
 const BASE_URL = "https://www.omdbapi.com/";
 

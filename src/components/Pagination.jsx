@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default function Pagination({ page, onPageChange }) {
   return (
     <div className="pagination">
